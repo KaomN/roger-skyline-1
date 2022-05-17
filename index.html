@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Login / Sign Up Form</title>
+	<link rel="stylesheet" href="./src/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<form class="form" id="login">
+			<h1 class="title">Login</h1>
+			<div class="form_message form_message-error"></div>
+			<div class="form_input-group">
+				<input type="text" class="form_input" autofocus placeholder="Username">
+				<div class="input_error-message"></div>
+			</div>
+			<div class="form_input-group">
+				<input type="password" class="form_input" autofocus placeholder="Password">
+				<div class="input_error-message"></div>
+			</div>
+			<button class="form_button" type="submit">Login</button>
+			<p class="form_text">
+				<a class="form_link" href="./" id="linkCreateAccount">Don't have and account? Create an account</a>
+			</p>
+		</form>
+		<form class="form form-hidden" id="createAccount">
+			<h1 class="title">Create Account</h1>
+			<div class="form_message form_message-error"></div>
+			<div class="form_input-group">
+				<input type="text" id="signupUsername" class="form_input" autofocus placeholder="Username">
+				<div class="input_error-message"></div>
+			</div>
+			<div class="form_input-group">
+				<input type="password" class="form_input" autofocus placeholder="Password">
+				<div class="input_error-message"></div>
+			</div>
+			<div class="form_input-group">
+				<input type="password" class="form_input" autofocus placeholder="Confirm Password">
+				<div class="input_error-message"></div>
+			</div>
+			<button class="form_button" type="submit">Sign up</button>
+			<p class="form_text">
+				<a class="form_link" href="./" id="linkLogin"><br>Already have an account? Sign in!</a>
+			</p>
+		</form>
+	</div>
+	<script src="./src/main.js"></script>
+</body>
