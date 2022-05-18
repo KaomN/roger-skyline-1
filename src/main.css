@@ -32,7 +32,7 @@ body {
 	font: 500 1rem 'Signika Negative', sans-serif;
 }
 
-.form-hidden{
+.form_hidden{
 	display: none;
 }
 
@@ -54,15 +54,7 @@ body {
 	margin-bottom: 1rem;
 }
 
-.form_message-success {
-	color: var(--color-sucess);
-}
-
-.form_message-error {
-	color: var(--color-error);
-}
-
-.form_input-group {
+.form_input_group {
 	margin-bottom: 1rem;
 }
 
@@ -81,17 +73,6 @@ body {
 .form_input:focus {
 	border-color: var(--color-primary);
 	background: #ffffff;
-}
-
-.form_input-error {
-	color: var(--color-error);
-	border-color: var(--color-error);
-}
-
-.input_error-message {
-	margin-top: 0.5rem;
-	font-size: 0.85rem;
-	color: var(--color-error);
 }
 
 .form_button {
