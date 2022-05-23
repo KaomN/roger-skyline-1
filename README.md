@@ -17,3 +17,6 @@ Add
 &ensp;&ensp;&ensp;&ensp;netmask 'your netmask'  
 &ensp;&ensp;&ensp;&ensp;gateway 'your gateway'  
 &ensp;&ensp;&ensp;&ensp;broadcast 'your broadcast'  
+
+Restart networking service with  
+> sudo systemctl restart networking  
