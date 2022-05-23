@@ -20,7 +20,9 @@ Add:
 &ensp;&ensp;&ensp;&ensp;broadcast 'your broadcast'  
 
 Restart networking service with:  
->sudo systemctl restart networking  
+```console
+sudo systemctl restart networking  
+```
 
 Links:  
 [Wiki Debian](https://wiki.debian.org/NetworkConfiguration#Configuring_the_interface_manually)  
@@ -56,9 +58,23 @@ Allow http connection:
 
 Allow https connection:  
 >sudo ufw allow 443  
- 
+
+Enable ufw:  
+>sudo ufw enable  
+
 Links:  
 [ufw setup](https://www.how2shout.com/linux/install-and-configure-ufw-on-debian-11-or-10/)
+
+### DOS setup  
+
+Install fail2ban:  
+>sudo apt-get install fail2ban  
+
+Create new config file in /etc/fail2ban/jail.d/filename  
+
+
+Links:  
+[fail2ban setup](https://www.garron.me/en/go2linux/fail2ban-protect-web-server-http-dos-attack.html)  
 
 ## SSH Configuration  
 
