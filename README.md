@@ -35,6 +35,31 @@ Links:
 [IBM CIDR Chart](https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=tables-cidrinfo)  
 [Subnet calculator](https://www.calculator.net/ip-subnet-calculator.html)
 
+## Firewall Configuration  
+
+### Firewall Setup  
+
+Install ufw:
+>sudo apt-get install ufw
+
+Deny all incoming connections:  
+>sudo ufw default deny incoming  
+
+Allow all outgoing connections:  
+>sudo ufw default allow outgoing
+
+Allow SSH connection:  
+>sudo ufw allow 50113/tcp  
+
+Allow http connection:  
+>sudo ufw allow 80/tcp  
+
+Allow https connection:  
+>sudo ufw allow 443  
+ 
+Links:  
+[ufw setup](https://www.how2shout.com/linux/install-and-configure-ufw-on-debian-11-or-10/)
+
 ## SSH Configuration  
 
 ### SSH setup  
