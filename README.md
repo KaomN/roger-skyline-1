@@ -52,6 +52,9 @@ Create new ssh key with:
 >ssh-keygen  
 
 Copy contents of the public key to /home/user/.ssh/authorized_keys  
+You can use:  
+>ssh-copy-id -i "public key file path" "user@host"  
+Note this will not work if Password authentication is disabled and there is no public key in the authorized_keys file.  
 
 Connect:
 > ssh -p 50113 user@10.12.179.250  
