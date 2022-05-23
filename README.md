@@ -28,9 +28,11 @@ Links:
 
 ### Subnet Mask Configuration  
 
-
+Subnetting is the strategy used to partition a single physical network into more than one smaller logical sub-networks (subnets).
 
 Links:  
+[Subnetting Definition](https://www.techopedia.com/definition/28328/subnetting)  
+[IBM CIDR Chart](https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=tables-cidrinfo)  
 [Subnet calculator](https://www.calculator.net/ip-subnet-calculator.html)
 
 ## SSH Configuration  
