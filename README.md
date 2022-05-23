@@ -42,25 +42,33 @@ Links:
 ### Firewall Setup  
 
 Install ufw:
->sudo apt-get install ufw
-
+```console
+sudo apt-get install ufw  
+```
 Deny all incoming connections:  
->sudo ufw default deny incoming  
-
+```console
+sudo ufw default deny incoming  
+```
 Allow all outgoing connections:  
->sudo ufw default allow outgoing
-
+```console
+sudo ufw default allow outgoing  
+```
 Allow SSH connection:  
->sudo ufw allow 50113/tcp  
-
+```console
+sudo ufw allow 50113/tcp  
+```
 Allow http connection:  
->sudo ufw allow 80/tcp  
-
+```console
+>udo ufw allow 80/tcp  
+```
 Allow https connection:  
->sudo ufw allow 443  
-
+```console
+sudo ufw allow 443  
+```
 Enable ufw:  
->sudo ufw enable  
+```console
+sudo ufw enable  
+```
 
 Links:  
 [ufw setup](https://www.how2shout.com/linux/install-and-configure-ufw-on-debian-11-or-10/)
