@@ -20,6 +20,6 @@ Add
 
 Restart networking service with  
 > sudo systemctl restart networking  
-Links:
-[Wiki Debian](https://wiki.debian.org/NetworkConfiguration#Configuring_the_interface_manually)
+Links:  
+[Wiki Debian](https://wiki.debian.org/NetworkConfiguration#Configuring_the_interface_manually)  
 [Linux Config](https://linuxconfig.org/how-to-setup-a-static-ip-address-on-debian-linux)
