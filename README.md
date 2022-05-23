@@ -59,7 +59,7 @@ sudo ufw allow 50113/tcp
 ```
 Allow http connection:  
 ```console
->udo ufw allow 80/tcp  
+sudo ufw allow 80/tcp  
 ```
 Allow https connection:  
 ```console
