@@ -10,4 +10,10 @@ Remove
 Add
 > auto 'devicename'
 
-test
+Create new file named 'devicename' in /etc/network/interfaces.d  
+Add
+> iface 'devicename' inet static  
+	address 'your ip address'
+	netmask 'your netmask'
+	gateway 'your gateway'
+	broadcast 'your broadcast'
