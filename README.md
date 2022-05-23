@@ -56,5 +56,5 @@ You can use:
 >ssh-copy-id -i "public key file path" "user@host"  
 Note this will not work if Password authentication is disabled and there is no public key in the authorized_keys file. You can re-enable password authentication just for this or manually add it to the authorized_keys file
 
-Connect:
+Connect using:
 > ssh -p 50113 user@10.12.179.250  
