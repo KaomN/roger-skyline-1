@@ -87,7 +87,7 @@ bantime = 5m
 findtime = 5m  
 maxretry = 5  
 
-[sshd]  
+>[sshd]  
 enabled = true  
 maxretry = 3  
 findtime = 5m  
@@ -96,7 +96,7 @@ port = 50113
 logpath = %(sshd_log)s  
 backend = %(sshd_backend)s  
 
-[http-dos]
+>[http-dos]
 enabled = true  
 maxretry = 20  
 findtime = 5m  
