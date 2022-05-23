@@ -58,3 +58,7 @@ Note this will not work if Password authentication is disabled and there is no p
 
 Connect using:
 > ssh -p 50113 user@10.12.179.250  
+
+Links:  
+[ssh.com](https://www.ssh.com/academy/ssh/)  
+[Enable ssh in Debian](https://phoenixnap.com/kb/how-to-enable-ssh-on-debian)
