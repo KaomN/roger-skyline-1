@@ -76,7 +76,9 @@ Links:
 ### DOS setup  
 
 Install fail2ban:  
->sudo apt-get install fail2ban  
+```console
+sudo apt-get install fail2ban  
+```
 
 Create new config file in /etc/fail2ban/jail.d/filename  
 
@@ -88,8 +90,9 @@ Links:
 
 ### SSH setup  
 Install ssh server:  
->sudo apt-get install openssh-server  
-
+```console
+sudo apt-get install openssh-server  
+```
 #### Modify sshd_config file in /etc/ssh  
 
 Change SSH port:  
@@ -107,15 +110,20 @@ Disable Password Authentication
 #### Connecting with SSH  
 
 Create new ssh key with:  
->ssh-keygen  
-
+```console
+ssh-keygen  
+```
 Copy contents of the public key to /home/user/.ssh/authorized_keys  
 You can use:  
->ssh-copy-id -i "public key file path" "user@host"  
-Note this will not work if Password authentication is disabled and there is no public key in the authorized_keys file. You can re-enable password authentication just for this or manually add it to the authorized_keys file
+```console
+ssh-copy-id -i "public key file path" "user@host"  
+```
+>Note this will not work if Password authentication is disabled and there is no public key in the authorized_keys file. You can re-enable password authentication just for this or manually add it to the authorized_keys file
 
 Connect using:
-> ssh -p 50113 user@10.12.179.250  
+```console
+ssh -p 50113 user@10.12.179.250  
+```
 
 Links:  
 [ssh.com](https://www.ssh.com/academy/ssh/)  
