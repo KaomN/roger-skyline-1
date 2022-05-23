@@ -26,6 +26,13 @@ Links:
 [Wiki Debian](https://wiki.debian.org/NetworkConfiguration#Configuring_the_interface_manually)  
 [Linux Config static IP](https://linuxconfig.org/how-to-setup-a-static-ip-address-on-debian-linux)
 
+### Subnet Mask Configuration  
+
+
+
+Links:  
+[Subnet calculator](https://www.calculator.net/ip-subnet-calculator.html)
+
 ## SSH Configuration  
 
 ### SSH setup  
