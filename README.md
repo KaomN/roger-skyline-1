@@ -13,7 +13,7 @@ Add
 Create new file named 'devicename' in /etc/network/interfaces.d  
 Add
 > iface 'devicename' inet static  
-&nbsp;&nbsp;&nbsp;&nbsp;address 'your ip address'  
-&nbsp;&nbsp;&nbsp;&nbsp;netmask 'your netmask'  
-&nbsp;&nbsp;&nbsp;&nbsp;gateway 'your gateway'  
-&nbsp;&nbsp;&nbsp;&nbsp;broadcast 'your broadcast'  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;address 'your ip address'  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;netmask 'your netmask'  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gateway 'your gateway'  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;broadcast 'your broadcast'  
