@@ -32,7 +32,7 @@ Links:
 Install ssh server:  
 >sudo apt-get install openssh-server  
 
-Modify sshd_config file in /etc/ssh  
+#### Modify sshd_config file in /etc/ssh  
 
 Change SSH port:  
 >Port 50113  
