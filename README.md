@@ -27,5 +27,5 @@ Links:
 [Linux Config](https://linuxconfig.org/how-to-setup-a-static-ip-address-on-debian-linux)
 
 ### SSH setup  
-To isntall ssh server:  
+To install ssh server:  
 > sudo apt-get install openssh-server  
