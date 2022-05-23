@@ -5,9 +5,9 @@
 Changing network from dhcp to static.  
 Modify interaces file in /etc/network.  
 Remove  
-> iface 'devicename' inet dhcp 
+> iface 'devicename' inet dhcp
 
 Add
-> auto 'devicename'  
+> auto 'devicename'
 
 test
