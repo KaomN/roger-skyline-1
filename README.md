@@ -39,3 +39,9 @@ Change SSH port:
 
 Disable root login:  
 >PermitRootLogin no  
+
+Enable Public key Authentication:  
+>PubKeyAuthentication yes  
+
+Disable Password Authentication  
+>PasswordAuthentication no  
