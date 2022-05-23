@@ -80,10 +80,34 @@ Install fail2ban:
 sudo apt-get install fail2ban  
 ```
 
-Create new config file in /etc/fail2ban/jail.d/filename  
+Create new config file in /etc/fail2ban/jail.d/"filename"  
+Add:  
+>[DEFAULT]  
+bantime = 5m  
+findtime = 5m  
+maxretry = 5  
 
+[sshd]  
+enabled = true  
+maxretry = 3  
+findtime = 5m  
+bantime = 5m  
+port = 50113  
+logpath = %(sshd_log)s  
+backend = %(sshd_backend)s  
+
+[http-dos]
+enabled = true  
+maxretry = 20  
+findtime = 5m  
+bantime = 5m  
+port = http,https  
+filter = http-dos
+logpath = /var/log/apache2/access.log  
+action = iptables[name=HTTPS, port=https, protocol=tcp]  
 
 Links:  
+[fail2ban How it Works](https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server)
 [fail2ban setup](https://www.garron.me/en/go2linux/fail2ban-protect-web-server-http-dos-attack.html)  
 
 ## SSH Configuration  
