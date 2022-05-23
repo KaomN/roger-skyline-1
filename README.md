@@ -2,6 +2,6 @@
 
 ## Network Configuration
 
-Changing network from dhcp to static.
-Modify interaces file in /etc/network.
+Changing network from dhcp to static.  
+Modify interaces file in /etc/network.  
 Remove > iface 'devicename' inet dhcp and add > auto 'devicename'
