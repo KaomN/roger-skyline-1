@@ -220,3 +220,20 @@ sudo crontab -e
 Add:  
 >0 4 * * 0 sudo /usr/local/sbin/update.sh  
 >@reboot sudo /usr/local/sbin/update.sh  
+
+### Monitor crontab changes script  
+
+## Apache Setup  
+
+Install apache2:  
+```console
+sudo apt-get install apache2  
+```
+
+Check that apache is running:  
+```console
+sudo systemctl status apache2  
+```
+
+Check that apache works:  
+>Open browser and type in http://YOUR_IP/  
