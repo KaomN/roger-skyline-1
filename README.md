@@ -138,8 +138,9 @@ BLOCK_UDP="1"
 
 Uncomment line:  
 ><div>  
-KILL_ROUTE="/sbin/iptables -I INPUT -s /$TARGET/$ -j DROP"  
-</div>
+>KILL_ROUTE="/sbin/iptables -I INPUT -s /$TARGET/$ -j DROP"  
+></div>
+
 Comment line:  
 >#KILL_ROUTE="/sbin/route add -host /$TARGET/$ reject"  
 
