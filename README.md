@@ -37,7 +37,7 @@ Links:
 [IBM CIDR Chart](https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=tables-cidrinfo)  
 [Subnet calculator](https://www.calculator.net/ip-subnet-calculator.html)
 
-## Firewall Configuration  
+## Firewall/DOS/Port Scan Configuration  
 
 ### Firewall Setup  
 
@@ -106,9 +106,44 @@ filter = http-dos
 logpath = /var/log/apache2/access.log  
 action = iptables[name=HTTPS, port=https, protocol=tcp]  
 
+Create new filter file in /etc/fail2ban/filter.d/http-dos  
+Add:
+>[Definition]
+failregex = ^<HOST> -.*"(GET|POST).*  
+ignoreregex =  
+
+Check logs fail2ban logs with:  
+```console
+sudo tail -f /var/log/fail2ban.log  
+```
+
 Links:  
 [fail2ban How it Works](https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server)  
 [fail2ban setup](https://www.garron.me/en/go2linux/fail2ban-protect-web-server-http-dos-attack.html)  
+
+### Port Scan Setup  
+
+Install portsentry with:  
+```console
+sudo apt-get install portsentry  
+```
+
+Modify /etc/default/portsentry  
+>TCP_MODE="atcp"  
+UDP_MODE="audp"  
+
+Modify /etc/portsentry/portsentry.conf  
+>BLOCK_TCP="1"  
+BLOCK_UDP="1"  
+
+Uncomment line:  
+>KILL_ROUTE="/sbin/iptables -I INPUT -s $TARGET$ -j DROP"  
+
+Comment line:  
+>#KILL_ROUTE="/sbin/route add -host $TARGET$ reject"  
+
+Links:  
+[Portsentry setup](https://en-wiki.ikoula.com/en/To_protect_against_the_scan_of_ports_with_portsentry)  
 
 ## SSH Configuration  
 
