@@ -223,7 +223,9 @@ Add:
 
 ### Monitor crontab changes script  
 
-## Apache Setup  
+## Webserver setup  
+
+### Apache installation  
 
 Install apache2:  
 ```console
@@ -242,3 +244,5 @@ Change index.html file in /var/www/html to your index.html file.
 
 Useful command to copy from host to server:  
 >scp -P 50113 file.txt username@to_host:/remote/directory/  
+
+### Adding SSL to Apache
