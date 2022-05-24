@@ -102,7 +102,7 @@ maxretry = 20
 findtime = 5m  
 bantime = 5m  
 port = http,https  
-filter = http-dos
+filter = http-dos  
 logpath = /var/log/apache2/access.log  
 action = iptables[name=HTTPS, port=https, protocol=tcp]  
 
