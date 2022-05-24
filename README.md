@@ -303,5 +303,15 @@ Change/Add:
 >SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt  
 >SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key  
 
+#### (Optional) Redirect to HTTPS  
+
+Modify Virtual Host file:  
+```console
+sudo vim /etc/apache2/sites-available/000-default.conf  
+```
+
+Add:  
+>Redirect "/" "https://your_domain_or_IP/"  
+
 Links:  
 [SSL Certificate for Apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-debian-10)  
