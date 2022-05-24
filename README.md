@@ -239,5 +239,5 @@ Check that apache works:
 >Open browser and type in http://YOUR_IP/  
 
 Change index.html file in /var/www/html to your index.html file.  
-Useful command to copy:  
+Useful command to copy from host to server:  
 >scp -P 50113 file.txt username@to_host:/remote/directory/  
