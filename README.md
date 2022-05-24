@@ -112,7 +112,7 @@ Add:
 failregex = ^<HOST> -.*"(GET|POST).*  
 ignoreregex =  
 
-Check logs fail2ban logs with:  
+Check fail2ban logs with:  
 ```console
 sudo tail -f /var/log/fail2ban.log  
 ```
