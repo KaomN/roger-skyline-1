@@ -143,7 +143,7 @@ Uncomment line:
 
 Comment line:  
 ><div>  
->#KILL_ROUTE="/sbin/route add -host /$TARGET/$ reject"  
+>KILL_ROUTE="/sbin/route add -host $TARGET$ reject"  
 ></div>  
 
 Links:  
