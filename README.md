@@ -218,5 +218,5 @@ sudo crontab -e
 ```
 
 Add:  
-0 4 * * 0 sudo /usr/local/sbin/update.sh
-@reboot sudo /usr/local/sbin/update.sh
+0 4 * * 0 sudo /usr/local/sbin/update.sh  
+@reboot sudo /usr/local/sbin/update.sh  
