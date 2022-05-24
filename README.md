@@ -248,7 +248,21 @@ Useful command to copy from host to server:
 Links:  
 [How to install Apache](https://linuxize.com/post/how-to-install-apache-on-debian-10/)  
 
-### Adding SSL to Apache
+### SSL Certificate  
+
+Create the SSL certificate:  
+```console
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt  
+```
+
+After running the command it will a few questions:  
+>Country Name (2 letter code) [AU]:FI  
+>State or Province Name (full name) [Some-State]:Helsinki  
+>Locality Name (eg, city) []:Helsinki  
+>Organization Name (eg, company) [Internet Widgits Pty Ltd]:Hive  
+>Organizational Unit Name (eg, section) []:Student  
+>Common Name (e.g. server FQDN or YOUR name) []:server_IP_address  
+>Email Address []:your_email_address 
 
 Links:  
 [SSL Certificate for Apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-debian-10)  
