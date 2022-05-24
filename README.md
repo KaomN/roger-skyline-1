@@ -303,7 +303,7 @@ Change/Add:
 >SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt  
 >SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key  
 
-#### (Optional) Redirect to HTTPS  
+#### Redirect to HTTP to HTTPS  
 
 Modify Virtual Host file:  
 ```console
@@ -311,7 +311,17 @@ sudo vim /etc/apache2/sites-available/000-default.conf
 ```
 
 Add:  
->Redirect "/" "https://your_domain_or_IP/"  
+>Redirect permanent "/" "https://your_domain_or_IP/"  
+
+#### Enabling the Changes in Apache  
+
+Enable mod_ssl, the Apache SSL module, and mod_headers, which is needed by some of the settings in our SSL snippet, with the a2enmod command:  
+```console
+sudo a2enmod ssl  
+```
+```console
+sudo a2enmod headers  
+```
 
 Links:  
 [SSL Certificate for Apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-debian-10)  
