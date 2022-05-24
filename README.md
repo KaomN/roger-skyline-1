@@ -282,6 +282,24 @@ Add the following to the file:
 >SSLStaplingCache "shmcb:logs/stapling-cache(150000)"  
 >SSLSessionTickets Off  
 
+#### Modifying the Default Apache SSL Virtual Host File  
+
+Back up the original SSL Virtual Host file:  
+```console
+sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.bak  
+```
+
+Open the SSL Virtual Host file to make adjustments:  
+```console
+sudo vim /etc/apache2/sites-available/default-ssl.conf  
+```
+
+Change/Add:  
+>ServerAdmin your_email@example.com  
+>ServerName server_domain_or_IP  
+
+>SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt  
+>SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key  
 
 Links:  
 [SSL Certificate for Apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-debian-10)  
