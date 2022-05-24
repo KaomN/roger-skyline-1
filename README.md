@@ -71,7 +71,7 @@ sudo ufw enable
 ```
 
 Links:  
-[ufw setup](https://www.how2shout.com/linux/install-and-configure-ufw-on-debian-11-or-10/)
+[ufw setup](https://www.how2shout.com/linux/install-and-configure-ufw-on-debian-11-or-10/)  
 
 ### DOS setup  
 
@@ -107,7 +107,7 @@ logpath = /var/log/apache2/access.log
 action = iptables[name=HTTPS, port=https, protocol=tcp]  
 
 Links:  
-[fail2ban How it Works](https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server)
+[fail2ban How it Works](https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server)  
 [fail2ban setup](https://www.garron.me/en/go2linux/fail2ban-protect-web-server-http-dos-attack.html)  
 
 ## SSH Configuration  
