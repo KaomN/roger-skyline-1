@@ -296,7 +296,7 @@ sudo vim /etc/apache2/sites-available/default-ssl.conf
 
 Change/Add:  
 ><div>  
->ServerAdmin "your_email@example.com"  
+>ServerAdmin your_email@example.com  
 ></div>  
 >ServerName server_domain_or_IP  
 
