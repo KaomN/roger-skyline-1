@@ -204,6 +204,19 @@ Add:
 >sudo apt-get update -y >> /var/log/update_script.log  
 >sudo apt-get upgrade -y >> /var/log/update_script.log  
 
+Give it the right permissions with:  
+```console
+sudo chmod 755 update.sh  
+```
+
 Save/move the file to:  
 >/usr/local/sbin/  
 
+Add the new script to crontab:  
+```console
+sudo crontab -e  
+```
+
+Add:  
+0 4 * * 0 sudo /usr/local/sbin/update.sh
+@reboot sudo /usr/local/sbin/update.sh
