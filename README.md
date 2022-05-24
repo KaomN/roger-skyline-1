@@ -137,10 +137,10 @@ Modify /etc/portsentry/portsentry.conf
 BLOCK_UDP="1"  
 
 Uncomment line:  
->KILL_ROUTE="/sbin/iptables -I INPUT -s '$TARGET$' -j DROP"  
+>KILL_ROUTE="/sbin/iptables -I INPUT -s $$TARGET$$ -j DROP"  
 
 Comment line:  
->#KILL_ROUTE="/sbin/route add -host '$TARGET$' reject"  
+>#KILL_ROUTE="/sbin/route add -host $$TARGET$$ reject"  
 
 Links:  
 [Portsentry setup](https://en-wiki.ikoula.com/en/To_protect_against_the_scan_of_ports_with_portsentry)  
