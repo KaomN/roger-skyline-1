@@ -256,13 +256,13 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/privat
 ```
 
 After running the command it will a few questions:  
->Country Name (2 letter code) [AU]:FI  
->State or Province Name (full name) [Some-State]:Helsinki  
->Locality Name (eg, city) []:Helsinki  
->Organization Name (eg, company) [Internet Widgits Pty Ltd]:Hive  
->Organizational Unit Name (eg, section) []:Student  
->Common Name (e.g. server FQDN or YOUR name) []:server_IP_address  
->Email Address []:your_email_address 
+>Country Name (2 letter code) [AU]: FI  
+>State or Province Name (full name) [Some-State]: Helsinki  
+>Locality Name (eg, city) []: Helsinki  
+>Organization Name (eg, company) [Internet Widgits Pty Ltd]: Hive  
+>Organizational Unit Name (eg, section) []: Student  
+>Common Name (e.g. server FQDN or YOUR name) []: server_IP_address  
+>Email Address []: your_email_address  
 
 Links:  
 [SSL Certificate for Apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-debian-10)  
