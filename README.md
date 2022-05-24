@@ -194,6 +194,8 @@ Links:
 
 ## Disable services  
 
+
+
 ## Scripts  
 
 ### Update script  
@@ -222,6 +224,8 @@ Add:
 >@reboot sudo /usr/local/sbin/update.sh  
 
 ### Monitor crontab changes script  
+
+
 
 ## Webserver setup  
 
