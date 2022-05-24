@@ -323,5 +323,25 @@ sudo a2enmod ssl
 sudo a2enmod headers  
 ```
 
+Enable your SSL Virtual Host with the a2ensite command:  
+```console
+sudo a2ensite default-ssl  
+```
+
+Enable ssl-params.conf file:  
+```console
+sudo a2enconf ssl-params  
+```
+
+Check that there are no syntax errors in our files:  
+```console
+sudo apache2ctl configtest  
+```
+
+Restart apache:  
+```console
+sudo systemctl restart apache2  
+```
+
 Links:  
 [SSL Certificate for Apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-debian-10)  
