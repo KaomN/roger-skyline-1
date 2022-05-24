@@ -297,8 +297,9 @@ sudo vim /etc/apache2/sites-available/default-ssl.conf
 Change/Add:  
 ><div>  
 >ServerAdmin "your_email@example.com"  
->ServerName server_domain_or_IP  
 ></div>  
+>ServerName server_domain_or_IP  
+
 >SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt  
 >SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key  
 
