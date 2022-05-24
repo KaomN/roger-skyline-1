@@ -275,7 +275,7 @@ Add the following to the file:
 >SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH  
 >SSLProtocol All -SSLv2 -SSLv3 -TLSv1 -TLSv1.1  
 >SSLHonorCipherOrder On  
-># Disable preloading HSTS for now.  You can use the commented out header line that includes  
+><div># Disable preloading HSTS for now.  You can use the commented out header line that includes</div>  
 ># the "preload" directive if you understand the implications.  
 ># Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"  
 >Header always set X-Frame-Options DENY  
