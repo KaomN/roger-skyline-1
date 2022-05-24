@@ -191,3 +191,19 @@ ssh -p 50113 user@10.12.179.250
 Links:  
 [ssh.com](https://www.ssh.com/academy/ssh/)  
 [Enable ssh in Debian](https://phoenixnap.com/kb/how-to-enable-ssh-on-debian)
+
+## Disable services  
+
+## Scripts  
+
+### Update script  
+
+Create new file named update.sh  
+Add:
+>#!/bin/bash  
+>sudo apt-get update -y >> /var/log/update_script.log  
+>sudo apt-get upgrade -y >> /var/log/update_script.log  
+
+Save/move the file to:  
+>/usr/local/sbin/  
+
