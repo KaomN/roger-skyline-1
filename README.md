@@ -249,3 +249,6 @@ Links:
 [How to install Apache](https://linuxize.com/post/how-to-install-apache-on-debian-10/)  
 
 ### Adding SSL to Apache
+
+Links:  
+[SSL Certificate for Apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-debian-10)  
