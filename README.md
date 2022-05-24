@@ -274,7 +274,7 @@ sudo vim /etc/apache2/conf-available/ssl-params.conf
 Add the following to the file:  
 >SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH  
 >SSLProtocol All -SSLv2 -SSLv3 -TLSv1 -TLSv1.1  
->SSLHonorCipherOrder On  
+>SSLHonorCipherOrder On
 ><div>
 ># Disable preloading HSTS for now.  You can use the commented out header line that includes  
 ></div>
