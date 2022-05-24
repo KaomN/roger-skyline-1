@@ -139,12 +139,13 @@ BLOCK_UDP="1"
 Uncomment line:  
 ><div>  
 >KILL_ROUTE="/sbin/iptables -I INPUT -s $TARGET$ -j DROP"  
-></div>
+></div>  
 
 Comment line:  
-<div>
+><div>  
 >#KILL_ROUTE="/sbin/route add -host /$TARGET/$ reject"  
-</div>
+></div>  
+
 Links:  
 [Portsentry setup](https://en-wiki.ikoula.com/en/To_protect_against_the_scan_of_ports_with_portsentry)  
 
