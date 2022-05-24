@@ -303,7 +303,7 @@ Change/Add:
 >SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt  
 >SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key  
 
-#### Redirect to HTTP to HTTPS  
+#### Redirect HTTP to HTTPS  
 
 Modify Virtual Host file:  
 ```console
