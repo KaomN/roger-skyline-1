@@ -323,7 +323,7 @@ sudo a2enmod ssl
 sudo a2enmod headers  
 ```
 
-Enable your SSL Virtual Host with the a2ensite command:  
+Enable SSL Virtual Host with the a2ensite command:  
 ```console
 sudo a2ensite default-ssl  
 ```
