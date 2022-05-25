@@ -429,3 +429,5 @@ sudo crontab -e
 
 Add:  
 >0 7 * * 1 sudo /usr/local/sbin/update_html.sh  
+>
+>This will run the script every monday at 7am  
