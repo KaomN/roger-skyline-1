@@ -310,6 +310,10 @@ Links:
 
 ### SSL Certificate  
 
+#### What is an SSL Certificate:  
+
+SSL certificates are a small data files that cryptographically establish an encrypted link between a web server and a browser. This link ensures that all data passed between the web server and browser remain private.
+
 #### Create the SSL certificate:  
 ```console
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt  
@@ -404,6 +408,7 @@ sudo systemctl restart apache2
 ```
 
 Links:  
+[What is SSL](https://blog.hubspot.com/marketing/what-is-ssl)  
 [SSL Certificate for Apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-debian-10)  
 
 ### Deployment Automation  
