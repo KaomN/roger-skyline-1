@@ -204,6 +204,7 @@ sudo systemctl list-unit-files --type=service --state=enabled
 Output:  
 
 ```console
+UNIT FILE                 STATE   VENDOR PRESET
 apache2.service           enabled enabled
 apparmor.service          enabled enabled
 cron.service              enabled enabled
