@@ -282,7 +282,7 @@ sudo crontab -e
 Add:  
 >0 0 * * * sudo /usr/local/sbin/monitor.sh  
 
-To read the mail use `mail or mailx
+To read the mail use `mail` or `mailx`
 ## Webserver setup  
 
 ### Apache installation  
