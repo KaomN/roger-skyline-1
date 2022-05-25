@@ -192,9 +192,14 @@ Links:
 [ssh.com](https://www.ssh.com/academy/ssh/)  
 [Enable ssh in Debian](https://phoenixnap.com/kb/how-to-enable-ssh-on-debian)
 
-## Disable services  
+## Disable Services  
 
+### Disabling services not needed
 
+Check enabled services with:  
+```console
+sudo systemctl list-unit-files --type=service --state=enabled 
+```
 
 ## Scripts  
 
