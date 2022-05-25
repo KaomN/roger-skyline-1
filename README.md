@@ -217,6 +217,11 @@ systemd-timesyncd.service enabled enabled synchronize the local system clock wit
 ufw.service               enabled enabled ufw
 ```
 
+Disable services with:  
+```console
+sudo systemctl disable "servicename"
+```
+
 ## Scripts  
 
 ### Update script  
@@ -246,7 +251,15 @@ Add:
 
 ### Monitor crontab changes script  
 
-
+Create new file named monitor.sh  
+Add:
+>#!/bin/bash  
+>
+>DIFFERENCE=$(diff /etc/crontab_backup /etc/crontab)  
+>sudo cat /etc/crontab > /etc/crontab_backup  
+>if [ "$DIFFERENCE" != "" ]; then  
+>        echo "crontab file has been modified, notifying admin." | mail -s "crontab modified" root  
+>fi  
 
 ## Webserver setup  
 
