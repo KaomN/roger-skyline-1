@@ -258,7 +258,7 @@ Add:
 >DIFFERENCE=$(diff /etc/crontab_backup /etc/crontab)  
 >sudo cat /etc/crontab > /etc/crontab_backup  
 >if [ "$DIFFERENCE" != "" ]; then  
->&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;echo "crontab file has been modified, notifying admin." | mail -s "crontab modified" root  
+>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;echo "crontab file has been modified, notifying admin." | mail -s "crontab modified" root  
 >fi  
 
 ## Webserver setup  
