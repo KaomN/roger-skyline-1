@@ -408,4 +408,16 @@ Links:
 
 ### Deployment  
 
-We can create a script that checks /var/www/html folder with the temp/html folder, if there is a difference we copy over from temp/html to /var/www/html.
+We can create a script that checks /var/www/html folder with the temp/html folder, if there is a difference we copy over from temp/html to /var/www/html.  
+
+Create new script file `update_html.sh`  
+Add:  
+```console
+#!/bin/bash
+DIFFERENCE=$(diff -rq /home/cong/html/ /var/www/html/)
+if [ "$DIFFERENCE" != "" ]; then
+        sudo cp -r /var/www/html/ /home/cong/html.bak/
+        sudo cp -r /home/cong/html/ /var/www/
+        echo "html changed, notifying admin." | mail -s "Deployment done" root
+fi
+```
