@@ -405,3 +405,7 @@ sudo systemctl restart apache2
 
 Links:  
 [SSL Certificate for Apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-debian-10)  
+
+### Deployment  
+
+We can create a script that checks /var/www/html folder with the temp/html folder, if there is a difference we copy over from temp/html to /var/www/html.
