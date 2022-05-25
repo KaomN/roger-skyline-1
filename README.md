@@ -205,16 +205,16 @@ Output:
 
 ```console
 UNIT FILE                 STATE   VENDOR PRESET
-apache2.service           enabled enabled
-apparmor.service          enabled enabled
-cron.service              enabled enabled
-fail2ban.service          enabled enabled
-getty@.service            enabled enabled
-networking.service        enabled enabled
-rsyslog.service           enabled enabled
-ssh.service               enabled enabled
-systemd-timesyncd.service enabled enabled
-ufw.service               enabled enabled
+apache2.service           enabled enabled Apache Server
+apparmor.service          enabled enabled Mandatory Access Control 
+cron.service              enabled enabled Cron 
+fail2ban.service          enabled enabled Fail2ban
+getty@.service            enabled enabled manages physical or virtual terminals
+networking.service        enabled enabled raises or downs the network interfaces configured in /etc/network/interfaces
+rsyslog.service           enabled enabled system utility providing support for message logging
+ssh.service               enabled enabled SSH
+systemd-timesyncd.service enabled enabled synchronize the local system clock with a remote Network Time Protocol server
+ufw.service               enabled enabled ufw
 ```
 
 ## Scripts  
