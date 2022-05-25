@@ -207,7 +207,7 @@ sudo systemctl list-unit-files --type=service --state=enabled
 >cron.service              enabled enabled  
 >fail2ban.service          enabled enabled  
 ><div>  
->getty@.service            enabled enabled  
+getty@.service            enabled enabled  
 ></div>  
 >networking.service        enabled enabled  
 >rsyslog.service           enabled enabled  
