@@ -201,7 +201,7 @@ Check enabled services with:
 sudo systemctl list-unit-files --type=service --state=enabled 
 ```
 
->++UNIT FILE                 STATE   VENDOR PRESET++  
+><u>UNIT FILE                 STATE   VENDOR PRESET</u>  
 >apache2.service           enabled enabled  
 >apparmor.service          enabled enabled  
 >cron.service              enabled enabled  
