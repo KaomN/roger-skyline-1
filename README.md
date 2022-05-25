@@ -251,6 +251,11 @@ Add:
 
 ### Monitor crontab changes script  
 
+Install mailutils with:  
+```console
+sudo apt-get install mailutils  
+```
+
 Create new file named monitor.sh  
 Add:
 >#!/bin/bash  
