@@ -261,6 +261,22 @@ Add:
 >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;echo "crontab file has been modified, notifying admin." | mail -s "crontab modified" root  
 >fi  
 
+Give it the right permissions with:  
+```console
+sudo chmod 755 monitor.sh  
+```
+
+Save/move the file to:  
+>/usr/local/sbin/  
+
+Add the new script to crontab:  
+```console
+sudo crontab -e  
+```
+
+Add:  
+>0 0 * * * sudo /usr/local/sbin/monitor.sh  
+
 ## Webserver setup  
 
 ### Apache installation  
