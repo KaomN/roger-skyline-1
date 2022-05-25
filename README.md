@@ -206,7 +206,7 @@ sudo systemctl list-unit-files --type=service --state=enabled
 >apparmor.service          enabled enabled  
 >cron.service              enabled enabled  
 >fail2ban.service          enabled enabled  
-><div>  
+><div>
 >getty@.service            enabled enabled  
 ></div>
 >networking.service        enabled enabled  
