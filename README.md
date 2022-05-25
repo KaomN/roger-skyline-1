@@ -421,3 +421,11 @@ if [ "$DIFFERENCE" != "" ]; then
         echo "html changed, notifying admin." | mail -s "Deployment done" root
 fi
 ```
+
+Add to crontab with:  
+```console
+sudo crontab -e 
+```
+
+Add:  
+>0 7 * * 1 sudo /usr/local/sbin/update_html.sh  
