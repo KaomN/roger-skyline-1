@@ -408,7 +408,7 @@ Links:
 
 ### Deployment  
 
-We can create a script that checks /var/www/html folder with the temp/html folder, if there is a difference we copy over from /html to /var/www/html. The script will also create a backup of /var/www/html first before copying over. After the script is run it will send an email to notify that deployment has been done.
+We can create a script that checks /var/www/html folder with the temp/html folder, if there is a difference we copy over from /html to /var/www/html. The script will also create a backup of /var/www/html first before copying over. The script will also send a mail to notify that deployment has been done.
 
 Create new script file `update_html.sh`  
 Add:  
