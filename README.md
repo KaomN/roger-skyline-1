@@ -181,7 +181,7 @@ You can use:
 ```console
 ssh-copy-id -i "public key file path" "user@host"  
 ```
->Note this will not work if Password authentication is disabled and there is no public key in the authorized_keys file. You can re-enable password authentication just for this or manually add it to the authorized_keys file
+>Note this will not work if Password authentication is disabled and there is no authorized public key in the authorized_keys file. You can re-enable password authentication just for this or manually add it to the authorized_keys file
 
 Connect using:
 ```console
