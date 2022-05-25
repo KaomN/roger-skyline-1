@@ -212,6 +212,7 @@ sudo systemctl list-unit-files --type=service --state=enabled
 >ssh.service               enabled enabled  
 >systemd-timesyncd.service enabled enabled  
 >ufw.service               enabled enabled  
+>This is an \*example with an asterisk\*.
 
 ## Scripts  
 
