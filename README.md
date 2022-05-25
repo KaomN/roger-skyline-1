@@ -201,11 +201,11 @@ Check enabled services with:
 sudo systemctl list-unit-files --type=service --state=enabled 
 ```
 
->UNIT FILE                 STATE   VENDOR PRESET  
+>++UNIT FILE                 STATE   VENDOR PRESET++  
 >apache2.service           enabled enabled  
 >apparmor.service          enabled enabled  
 >cron.service              enabled enabled  
->fail2ban.service          enabled enabled
+>fail2ban.service          enabled enabled  
 >getty@.service            enabled enabled  
 >networking.service        enabled enabled  
 >rsyslog.service           enabled enabled  
