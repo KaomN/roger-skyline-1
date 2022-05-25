@@ -205,15 +205,16 @@ sudo systemctl list-unit-files --type=service --state=enabled
 >apache2.service           enabled enabled  
 >apparmor.service          enabled enabled  
 >cron.service              enabled enabled  
->fail2ban.service          enabled enabled  
+>fail2ban.service          enabled enabled
 ><div>
 >getty@.service            enabled enabled  
+></div>
 >networking.service        enabled enabled  
 >rsyslog.service           enabled enabled  
 >ssh.service               enabled enabled  
 >systemd-timesyncd.service enabled enabled  
 >ufw.service               enabled enabled  
-></div>
+
 ## Scripts  
 
 ### Update script  
