@@ -202,16 +202,16 @@ sudo systemctl list-unit-files --type=service --state=enabled
 ```
 
 >UNIT FILE&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;STATE   VENDOR PRESET  
->apache2.service           enabled enabled  
->apparmor.service          enabled enabled  
->cron.service              enabled enabled  
->fail2ban.service          enabled enabled  
->getty\@\.service            enabled enabled  
->networking.service        enabled enabled  
->rsyslog.service           enabled enabled  
->ssh.service               enabled enabled  
->systemd-timesyncd.service enabled enabled  
->ufw.service               enabled enabled  
+>apache2.service&ensp;&ensp;&ensp;&ensp;enabled enabled  
+>apparmor.service&ensp;&ensp;&ensp;&ensp;enabled enabled  
+>cron.service&ensp;&ensp;&ensp;&ensp;enabled enabled  
+>fail2ban.service&ensp;&ensp;&ensp;&ensp;enabled enabled  
+>getty\@\.service&ensp;&ensp;&ensp;&ensp;enabled enabled  
+>networking.service&ensp;&ensp;&ensp;&ensp;enabled enabled  
+>rsyslog.service&ensp;&ensp;&ensp;&ensp;enabled enabled  
+>ssh.service&ensp;&ensp;&ensp;&ensp;enabled enabled  
+>systemd-timesyncd.service&ensp;&ensp;&ensp;&ensp;enabled enabled  
+>ufw.service&ensp;&ensp;&ensp;&ensp;enabled enabled  
 >This is an \*example with an asterisk\*.
 
 ## Scripts  
