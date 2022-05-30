@@ -172,7 +172,16 @@ Disable Password Authentication
 
 #### Connecting with SSH  
 
-Create new ssh key with:  
+Create new user:  
+```console
+sudo adduser 'user'  
+```
+
+Add user to sudoers group:  
+```console
+sudo usermod -aG sudo 'user'  
+```
+Create new ssh key if needed with:  
 ```console
 ssh-keygen  
 ```
